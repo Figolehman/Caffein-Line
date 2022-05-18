@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="navbar.js"></script>
+    <script defer src="validation.js"></script>
+    <title>Document</title>
+</head>
+<body style="zoom: 150%;">
+    <nav>
+        <img src="images/brand.png" alt="">
+        <ul style="zoom: 80%;">
+            <li><a href="Index.html">Home</a></li>
+            <li class="menuhov" id="hov1">Menu Beverages</a>
+                <ul>
+                    <li><a href="MenuBeveragesC.html">Coffee</a></li>
+                    <li><a href="MenuBeveragesT.html">Tea</a></li>
+                </ul>
+            </li>
+            <li class="menuhov" id="hov2">Menu Desserts</a>
+                <ul>
+                    <li><a href="MenuDessertsC.html">Coffee</a></li>
+                    <li><a href="MenuDessertsT.html">Tea</a></li>
+                </ul>
+            </li>
+            <li><a href="Payment.html">Payment</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="navtog">
+        <div class="line1"></div>
+        <div class="line1"></div>
+        <div class="line1"></div>
+    </div>
+    <img class="free" src="images/free.png" alt="">
+    <form class="PPage">
+        <p>Payment</p>
+        <div class="formdiv">
+            <div class="PMethod">
+                <p><b>Payment Method</b></p>
+                <div class="form2 form">
+                    <div>
+                        <div class="CC">
+                            <b>Credit Card</b>
+                            <img src="images/visa.png" alt="">
+                        </div>
+                        <label for="card">Card number</label><br>
+                        <input type="number" name="card" id="card">
+                        <div>
+                            <div>
+                                <div>
+                                    <label for="exp">Expiry Date</label><br>
+                                    <input type="number" name=""  id="mm" class="exp" placeholder="MM">/<input type="number" name="" id="yy" class="exp" placeholder="YY">
+                                </div>
+                                <div>
+                                    <label for="cvv">CVV</label> <br>
+                                    <input type="number" name="" id="CVV">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form3 form">
+                    <div class="paypal">
+                        <b>Paypal</b>
+                    </div>
+                    <div class="paypalbut">
+                        <p>To pay with PayPal, click on the PayPal logo below</p>
+                        <a href="https://www.paypal.com"><img src="images/paypal.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        <div class="PInfo">
+            <p><b>Personal Information</b></p>
+            <div class="form1 form">
+                <label for="name">Full Name</label> <br>
+                <input type="text" name="name" id="name"> <br>
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="email"> <br>
+                <label for="city">City</label> <br>
+                <input type="text" name="city" id="city"> <br>
+                <label for="address">Address</label> <br>
+                <textarea name="address" id="address" cols="20" rows="4"></textarea>
+            </div>
+        </div>
+        
+        </div>
+        <div class="submition">
+            <input type="checkbox" name="" id="agree">
+            <label for="agree">I have read and agree to the terms of service and Privacy policy <br></label>
+            <!-- <input type="button" value="Submit" id="submit" onclick="diver()"> -->
+            <button id="submit" onclick="check()">Submit</button>
+        </div>
+    </form>
+    <footer>
+        <p>Copyright &copy; Caffein Line. All rights reserved.<p>
+    </footer>
+</body>
+</html>
